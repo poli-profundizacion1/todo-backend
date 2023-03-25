@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://mypostgresql:5432/bdapp
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: poliadmin
+  sql:
+    init:
+      platform: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
